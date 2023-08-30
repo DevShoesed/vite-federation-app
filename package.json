@@ -1,0 +1,29 @@
+{
+	"name": "vite-federation-app",
+	"version": "1.0.0",
+	"description": "React Microfrontends Vite Federation",
+	"main": "index.js",
+	"scripts": {
+		"install:deps": "npm --prefix ./host install && npm --prefix ./mfe1 install && npm --prefix ./mfe2 install",
+		"dev:host": "npm --prefix ./host run dev",
+		"dev:mfe1": "npm --prefix ./mfe1 run dev",
+		"dev:mfe2": "npm --prefix ./mfe2 run dev",
+		"dev": "run-p dev:*",
+		"build:host": "npm --prefix ./host run build",
+		"build:mfe1": "npm --prefix ./mfe1 run build",
+		"build:mfe2": "npm --prefix ./mfe2 run build",
+		"preview:host": "npm --prefix ./host run build && npm --prefix ./host run preview",
+		"preview:mfe1": "npm --prefix ./mfe1 run build && npm --prefix ./mfe1 run preview",
+		"preview:mfe2": "npm --prefix ./mfe2 run build && npm --prefix ./mfe2 run preview",
+		"preview": "run-p preview:*"
+	},
+	"author": {
+		"name": "Francesco Scarpato",
+		"email": "francesco.scarpato@gmail.com",
+		"url": "https://github.com/DevShoesed"
+	},
+	"license": "ISC",
+	"devDependencies": {
+		"npm-run-all": "^4.1.5"
+	}
+}
