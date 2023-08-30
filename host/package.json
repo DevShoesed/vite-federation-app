@@ -12,10 +12,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
-    "@refinedev/core": "^4.36.0"
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
+    "@refinedev/core": "^4.36.0",
     "@module-federation/vite": "^0.2.6",
     "@refinedev/inferencer": "^4.5.4",
     "@refinedev/react-router-v6": "^4.5.0",
